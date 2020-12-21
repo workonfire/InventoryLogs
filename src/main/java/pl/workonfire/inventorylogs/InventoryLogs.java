@@ -8,7 +8,6 @@ import pl.workonfire.inventorylogs.storage.StorageManager;
 public final class InventoryLogs extends JavaPlugin {
     private static InventoryLogs instance;
 
-
     @Override
     public void onEnable() {
         instance = this;

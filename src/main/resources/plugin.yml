@@ -1,0 +1,5 @@
+name: InventoryLogs
+version: ${project.version}
+main: pl.workonfire.inventorylogs.InventoryLogs
+api-version: 1.13
+authors: [workonfire]

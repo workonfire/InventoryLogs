@@ -2,6 +2,7 @@ package pl.workonfire.inventorylogs;
 
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
+import pl.workonfire.inventorylogs.commands.ForceSaveCommand;
 import pl.workonfire.inventorylogs.events.InventoryClick;
 import pl.workonfire.inventorylogs.storage.StorageManager;
 
@@ -14,6 +15,9 @@ public final class InventoryLogs extends JavaPlugin {
         getInstance().saveDefaultConfig();
         Bukkit.getScheduler().scheduleSyncRepeatingTask(getInstance(), StorageManager::save, 0, 18000);
         getServer().getPluginManager().registerEvents(new InventoryClick(), getInstance());
+
+        new ForceSaveCommand();
+
     }
 
     @Override

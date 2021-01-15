@@ -12,7 +12,7 @@ public final class InventoryLogs extends JavaPlugin {
     @Override
     public void onEnable() {
         instance = this;
-        getInstance().saveDefaultConfig();
+        StorageManager.initializeStorage();
         Bukkit.getScheduler().scheduleSyncRepeatingTask(getInstance(), StorageManager::save, 0, 18000);
         getServer().getPluginManager().registerEvents(new InventoryClick(), getInstance());
 

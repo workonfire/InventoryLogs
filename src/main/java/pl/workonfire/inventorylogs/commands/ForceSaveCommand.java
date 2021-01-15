@@ -8,7 +8,7 @@ import pl.workonfire.inventorylogs.storage.StorageManager;
 import pl.workonfire.inventorylogs.util.Command;
 import pl.workonfire.inventorylogs.util.CommandProcessor;
 
-@Command(name = "forcesave")
+@Command(name = "logsforcesave")
 public class ForceSaveCommand extends CommandProcessor implements CommandExecutor {
 
     public ForceSaveCommand() {
